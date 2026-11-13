@@ -7,10 +7,34 @@
 </head>
 <body>
 
-    <script>
-        document.write("<h1>Hello World JS</h1>")
+    <div id="block"></div>
 
-        console.log("Hello World, I am Mokaddes Hossain")
+    <script>
+        
+       let students = [
+
+        { name: "Rahim", age: 20 },
+        { name: "Karim", age: 22 },
+        { name: "Mina", age: 21 }
+
+        ]; 
+
+        let student = students.map(student => {
+
+            return `
+
+                <div class='student'>
+
+                    <h3>Name: ${student.name}</h3>
+                    <p>Age: ${student.age}</p>           
+
+                </div> 
+
+                `;
+        });
+
+        document.getElementById("block").innerHTML =  student.join("");
+
     </script>
     
 </body>
