@@ -204,6 +204,38 @@ console.log(colors);
 
 /*
 
+Task 2: splice()
+
+কাজ:
+
+1. Index 1 থেকে ২টি Student Delete করো।
+2. Index 1-এ "Fahim" যোগ করো।
+3. Index 2-এর Student-কে "Tamim" দিয়ে Replace করো।
+4. Final Array Print করো।
+5. Array Length Print করো।
+
+*/
+
+let students = ["Rahim", "Karim", "Sakib", "Nayeem", "Hasan"];
+
+students.splice(1, 2);
+
+console.log(students);
+
+students.splice(1, 0, "Fahim");
+
+console.log(students);
+
+students.splice(2, 1, "Tamim");
+
+console.log(students);
+
+console.log(students.length)
+
+
+
+/*
+
 Task 3: Challenge
 
 কাজ:
@@ -218,3 +250,13 @@ let numbers = [10, 20, 30, 40, 50, 60, 70];
 
 
 console.log(numbers.slice(2,5));
+
+numbers.splice(3,2);
+
+numbers.splice(3, 0, 45);
+
+console.log(numbers);
+
+
+
+
