@@ -17,34 +17,125 @@
 <body>
 
     
-<header>
-    <h1>Student Registration</h1>
-</header>
+
 
 <main>
+
+    <header>
+        <h2>Student Registration</h2>
+    </header>
+
     <form action="#">
 
         <label for="userName">User Name:</label>
         <input type="text" id="userName"
             placeholder="Enter Your First Name">
         
-        <span></span>
+        <span class="showError"></span>
 
         <label for="password">Password:</label>
         <input type="password" id="password"
             placeholder="Enter Your Password">
         
-        <span></span>
+        <span class="showError"></span>
 
         <label for="email">Email:</label>
         <input type="email" id="email"
             placeholder="Enter Your Email">
 
-        <span></span>
+        <span class="showError"></span>
 
         <button type="submit">Submit</button>
 
     </form>
+
+    <div class="html_list">
+
+        <h2>Ordered List</h2>
+
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+        </ol>
+
+        <h2>Unordered List</h2>
+
+        <ul>
+            <li>Programming</li>
+            <li>Use Phone</li>
+            <li>Traveling</li>
+            <li>Food</li>
+            <li>Farming</li>
+        </ul>
+
+        <h2>Description List</h2>
+
+        <dl>
+            <dt>HTML:</dt>
+            <dd>HTML is used to create web page structure.</dd>
+
+            <dt>CSS:</dt>
+            <dd>CSS is used to style web pages.</dd>
+
+            <dt>JavaScript:</dt>
+            <dd>JavaScript makes web pages interactive.</dd>
+        </dl>
+
+        <h2>Nested List</h2>
+
+        <ul>
+            <li>Frontend
+                <ol class="nested_list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ol>
+            </li>
+                
+            <li>Backend
+
+                <ol class="nested_list">
+                    <li>Python</li>
+                    <li>Django</li>
+                    <li>PostgreSQL</li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+
+    <div class="html_table">
+
+        <h2>HTML Table</h2>
+
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+            <tr>
+            <td>Mokaddes</td>
+            <td>30</td>
+            <td>Sirajganj</td>
+            </tr>
+
+            <tr>
+            <td>Rakib</td>
+            <td>30</td>
+            <td>Pabna</td>
+            </tr>
+
+            <tr>
+            <td>Rahim</td>
+            <td>30</td>
+            <td>Dhaka</td>
+            </tr>
+        </table>
+
+    </div>
+
 </main>
 
 <footer>
