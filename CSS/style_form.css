@@ -8,6 +8,8 @@ body {
     background-color: beige;
 }
 
+
+
 header {
     text-align: center;
     margin-top: 30px;
@@ -34,10 +36,68 @@ button {
     display: block;
     padding: 8px 20px;
     margin-top: 10px;
+    margin-bottom: 50px;
     cursor: pointer;
 }
 
 footer {
     text-align: center;
     margin-top: 20px;
+}
+
+.html_list {
+
+    margin: auto;
+    width:  300px;
+
+}
+
+h2 {
+
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.nested_list {
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+dt {
+
+    margin-bottom: 10px;
+}
+
+dd {
+
+    margin-bottom: 10px;
+}
+
+
+.html_table {
+
+    margin: auto;
+    width:  300px;
+}
+
+.html_table table {
+
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.html_table th, 
+.html_table td {
+
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+    background-color: #fff;
+    
+}
+
+.html_table th {
+
+    background-color: lightgray;
 }
