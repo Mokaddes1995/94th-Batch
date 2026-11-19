@@ -402,36 +402,36 @@
 
 // console.log(newStudentsList.length);
 
-let products = [
-    "Laptop",
-    "Mobile",
-    "Keyboard",
-    "Mouse"
-];
+// let products = [
+//     "Laptop",
+//     "Mobile",
+//     "Keyboard",
+//     "Mouse"
+// ];
 
-// 1. নতুন Product যোগ করো
+// // 1. নতুন Product যোগ করো
 
-products.push("Computer");
+// products.push("Computer");
 
-// 2. একটি Product Remove করো
+// // 2. একটি Product Remove করো
 
-products.pop();
+// products.pop();
 
-// 3. Product আছে কি না পরীক্ষা করো
+// // 3. Product আছে কি না পরীক্ষা করো
 
-console.log(products.includes("Computer"));
+// console.log(products.includes("Computer"));
 
-// 4. Product-এর Index বের করো
+// // 4. Product-এর Index বের করো
 
-console.log(products.indexOf("Mobile"));
+// console.log(products.indexOf("Mobile"));
 
-// 5. প্রথম দুটি Product আলাদা করো
+// // 5. প্রথম দুটি Product আলাদা করো
 
-console.log(products.slice(1, 3));
+// console.log(products.slice(1, 3));
 
-// 6. Final List Print করো
+// // 6. Final List Print করো
 
-console.log(products)
+// console.log(products)
 
 
 // // Practice Task 1
@@ -468,70 +468,125 @@ console.log(products)
 
 
 
-/*
+// /*
 
-আজকের Mini Challenge: Student Management System
+// আজকের Mini Challenge: Student Management System
 
-এই তিনটি Method ব্যবহার করে নিচের কাজগুলো করো:
-
-
-Task 1: find() ব্যবহার করে প্রথম ২০ বা তার বেশি বয়সী Student খুঁজে বের করো।
-
-Task 2: filter() ব্যবহার করে ২০ বা তার বেশি বয়সী সব Student বের করো।
-
-Task 3: map() ব্যবহার করে শুধু Student-দের নাম নিয়ে নতুন Array তৈরি করো।
-
-*/
-
-let students = [
-    { name: "Rahim", age: 18 },
-    { name: "Karim", age: 22 },
-    { name: "Sakib", age: 20 },
-    { name: "Nayeem", age: 25 },
-    { name: "Habib", age: 16 }
-];
+// এই তিনটি Method ব্যবহার করে নিচের কাজগুলো করো:
 
 
-const findAge = students.find(student => {
+// Task 1: find() ব্যবহার করে প্রথম ২০ বা তার বেশি বয়সী Student খুঁজে বের করো।
 
-    return student.age > 20
-});
+// Task 2: filter() ব্যবহার করে ২০ বা তার বেশি বয়সী সব Student বের করো।
 
-console.log(findAge);
+// Task 3: map() ব্যবহার করে শুধু Student-দের নাম নিয়ে নতুন Array তৈরি করো।
 
+// */
 
-const filterAge = students.filter(student => student.age > 20);
-
-console.log(filterAge);
-
-const mapName = students.map(student => student.name);
-
-console.log(mapName);
-
-
-// Task 1:
-// ২০ বছরের কম বয়সী সব Student বের করো।
-
-const filterBelow20 = students.filter(student => student.age < 20);
-
-console.log(filterBelow20);
-
-// Task 2:
-// প্রথম ২০ বছরের কম বয়সী Student খুঁজে বের করো।
-
-const findBelow20 = students.find(student => student.age < 20);
-
-console.log(findBelow20)
-
-// Task 3:
-// প্রত্যেক Student-এর নামের সঙ্গে " - Student" যোগ করে
-// নতুন Array তৈরি করো। 
-
-const addStudentExtension = students.map(student => {
-
-    return student.name + " - Student"
-});
-
-console.log(addStudentExtension);
+// let students = [
+//     { name: "Rahim", age: 18 },
+//     { name: "Karim", age: 22 },
+//     { name: "Sakib", age: 20 },
+//     { name: "Nayeem", age: 25 },
+//     { name: "Habib", age: 16 }
+// ];
 
 
+// const findAge = students.find(student => {
+
+//     return student.age > 20
+// });
+
+// console.log(findAge);
+
+
+// const filterAge = students.filter(student => student.age > 20);
+
+// console.log(filterAge);
+
+// const mapName = students.map(student => student.name);
+
+// console.log(mapName);
+
+
+// // Task 1:
+// // ২০ বছরের কম বয়সী সব Student বের করো।
+
+// const filterBelow20 = students.filter(student => student.age < 20);
+
+// console.log(filterBelow20);
+
+// // Task 2:
+// // প্রথম ২০ বছরের কম বয়সী Student খুঁজে বের করো।
+
+// const findBelow20 = students.find(student => student.age < 20);
+
+// console.log(findBelow20)
+
+// // Task 3:
+// // প্রত্যেক Student-এর নামের সঙ্গে " - Student" যোগ করে
+// // নতুন Array তৈরি করো। 
+
+// const addStudentExtension = students.map(student => {
+
+//     return student.name + " - Student"
+// });
+
+// console.log(addStudentExtension);
+
+
+// /*
+
+// Practice Task 1: JavaScript
+
+// Topic: Product Management
+
+// শর্ত
+// - পাঁচটি Task আলাদাভাবে সমাধান করবে।
+// - products Array পরিবর্তন করবে না।
+// - প্রতিটি Task-এর Output-ও পাঠাবে।
+
+// */
+
+// let products = [
+//     { name: "Laptop", price: 50000, category: "Electronics" },
+//     { name: "Mobile", price: 20000, category: "Electronics" },
+//     { name: "Keyboard", price: 1500, category: "Accessories" },
+//     { name: "Mouse", price: 800, category: "Accessories" },
+//     { name: "Monitor", price: 15000, category: "Electronics" }
+// ];
+
+
+// // Task 1: forEach() ব্যবহার করে সব Product-এর Name ও Price Print করো।
+
+// products.forEach(product => {
+
+//     console.log("Product Name: " + product.name + ", " + "Price: " + product.price);
+// });
+
+
+// // Task 2: map() ব্যবহার করে প্রতিটি Product-এর Price-এর সঙ্গে ১০% VAT যোগ করে নতুন Array তৈরি করো।
+
+// const addVat = products.map(product => product.price + (product.price * 0.10));
+
+// console.log(addVat);
+
+// // Task 3: filter() ব্যবহার করে ১০,০০০ টাকার বেশি দামের Product বের করো।
+
+// const filterProduct = products.filter(product => product.price > 10000);
+
+// console.log(filterProduct);
+
+// // Task 4: find() ব্যবহার করে "Keyboard" Product খুঁজে বের করো।
+
+// const findProduct = products.find(product => product.name === 'Keyboard');
+
+// console.log(findProduct);
+
+// // Task 5: reduce() ব্যবহার করে সব Product-এর Total Price বের করো।
+
+// const totalPrice = products.reduce((sum, product) => {
+//     return sum + product.price;
+// },0);
+
+// console.log(totalPrice);
